@@ -1,0 +1,27 @@
+chạy file crawl trong folder crawler (crawl_soccer.ipynb)
+
+1. #Chuyển dữ liệu từ kafka vào trong elasticsearch:
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.elasticsearch:elasticsearch-spark-30_2.12:8.9.0 /opt/spark-apps/jobs/streaming.py
+
+2. #Chuyển dữ liệu từ kafka vào trong hdfs
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1 /opt/spark-apps/jobs/save_hdfs.py
+
+3. #Đọc dữ liệu có trong hdfs
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1 /opt/spark-apps/jobs/read_all_data_in_hdfs.py
+
+
+
+4. # Cap quyen ghi cho spark
+hdfs dfs -mkdir -p /user/spark
+hdfs dfs -chown spark:spark /user/spark
+
+5. ***Tuy chon***
+hdfs dfs -mkdir -p /user/spark/models
+hdfs dfs -chown -R spark:spark /user/spark/models
+
+6. #train mo hinh 
+docker exec -it spark-master-train-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-train-h2dn:7077 /opt/spark-apps/jobs/train_model.py
+
+
+7. #Thuc hien du doan 
+docker exec -it spark-master-train-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-train-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.elasticsearch:elasticsearch-spark-30_2.12:8.9.0 /opt/spark-apps/jobs/predict_price.py

@@ -1,0 +1,436 @@
+crawl_timestamp,price_date,gold_type,buy_price,sell_price,source
+1744713510761,2025-03-16,SJC,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713510761,2025-03-16,DOJI HN,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713510761,2025-03-16,DOJI SG,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713510762,2025-03-16,BTMC SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713510762,2025-03-16,Phú Qúy SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713510762,2025-03-16,PNJ TP.HCM,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713510762,2025-03-16,PNJ Hà Nội,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449750,2025-03-16,SJC,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449757,2025-03-16,DOJI HN,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449757,2025-03-16,DOJI SG,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449757,2025-03-16,BTMC SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449757,2025-03-16,Phú Qúy SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449758,2025-03-16,PNJ TP.HCM,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714449758,2025-03-16,PNJ Hà Nội,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489072,2025-03-10,SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489073,2025-03-10,DOJI HN,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489073,2025-03-10,DOJI SG,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489074,2025-03-10,BTMC SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489075,2025-03-10,Phú Qúy SJC,91100,93100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489075,2025-03-10,PNJ TP.HCM,91800,93350,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713489075,2025-03-10,PNJ Hà Nội,91800,93350,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555791,2025-04-13,SJC,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555792,2025-04-13,DOJI HN,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555793,2025-04-13,DOJI SG,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555794,2025-04-13,BTMC SJC,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555794,2025-04-13,Phú Qúy SJC,102500,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555795,2025-04-13,PNJ TP.HCM,101200,104900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714555795,2025-04-13,PNJ Hà Nội,101200,104900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486139,2025-03-25,SJC,95900,97900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486142,2025-03-25,DOJI HN,95900,97900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486143,2025-03-25,DOJI SG,95900,97900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486147,2025-03-25,BTMC SJC,96000,97900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486147,2025-03-25,Phú Qúy SJC,95900,97900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486148,2025-03-25,PNJ TP.HCM,96100,98700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714486148,2025-03-25,PNJ Hà Nội,96100,98700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477381,2025-03-07,SJC,91100,93100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477382,2025-03-07,DOJI HN,91100,93100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477382,2025-03-07,DOJI SG,91100,93100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477382,2025-03-07,BTMC SJC,91100,93100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477383,2025-03-07,Phú Qúy SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477383,2025-03-07,PNJ TP.HCM,91700,93200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713477383,2025-03-07,PNJ Hà Nội,91700,93200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445339,2025-02-27,SJC,88900,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445340,2025-02-27,DOJI HN,88900,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445341,2025-02-27,DOJI SG,88900,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445341,2025-02-27,BTMC SJC,89200,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445342,2025-02-27,Phú Qúy SJC,89200,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445345,2025-02-27,PNJ TP.HCM,90300,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713445346,2025-02-27,PNJ Hà Nội,90300,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453355,2025-03-01,SJC,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453356,2025-03-01,DOJI HN,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453357,2025-03-01,DOJI SG,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453358,2025-03-01,BTMC SJC,88700,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453358,2025-03-01,Phú Qúy SJC,88700,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453359,2025-03-01,PNJ TP.HCM,89800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713453359,2025-03-01,PNJ Hà Nội,89800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402071,2025-02-16,SJC,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402074,2025-02-16,DOJI HN,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402074,2025-02-16,DOJI SG,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402075,2025-02-16,BTMC SJC,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402075,2025-02-16,Phú Qúy SJC,87500,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402076,2025-02-16,PNJ TP.HCM,88300,90200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713402076,2025-02-16,PNJ Hà Nội,88300,90200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552706,2025-04-12,SJC,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552707,2025-04-12,DOJI HN,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552707,2025-04-12,DOJI SG,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552707,2025-04-12,BTMC SJC,103000,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552708,2025-04-12,Phú Qúy SJC,102500,106500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552708,2025-04-12,PNJ TP.HCM,101200,104900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714552709,2025-04-12,PNJ Hà Nội,101200,104900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463913,2025-03-20,SJC,97800,99800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463914,2025-03-20,DOJI HN,97800,99800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463914,2025-03-20,DOJI SG,97800,99800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463914,2025-03-20,BTMC SJC,98000,99800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463914,2025-03-20,Phú Qúy SJC,98000,99800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463914,2025-03-20,PNJ TP.HCM,98100,99900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714463915,2025-03-20,PNJ Hà Nội,98100,99900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397320,2025-02-15,SJC,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397321,2025-02-15,DOJI HN,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397321,2025-02-15,DOJI SG,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397321,2025-02-15,BTMC SJC,87300,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397321,2025-02-15,Phú Qúy SJC,87500,90300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397321,2025-02-15,PNJ TP.HCM,88300,90200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713397322,2025-02-15,PNJ Hà Nội,88300,90200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410786,2025-02-18,SJC,88600,91100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410786,2025-02-18,DOJI HN,88600,91100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410787,2025-02-18,DOJI SG,88600,91100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410787,2025-02-18,BTMC SJC,88600,91100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410787,2025-02-18,Phú Qúy SJC,88700,91100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410788,2025-02-18,PNJ TP.HCM,89400,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713410788,2025-02-18,PNJ Hà Nội,89400,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420390,2025-02-20,SJC,90000,92300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420391,2025-02-20,DOJI HN,90000,92300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420391,2025-02-20,DOJI SG,90000,92300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420392,2025-02-20,BTMC SJC,90100,92300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420392,2025-02-20,Phú Qúy SJC,90100,92300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420392,2025-02-20,PNJ TP.HCM,90400,92200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713420392,2025-02-20,PNJ Hà Nội,90400,92200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530063,2025-04-06,SJC,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530064,2025-04-06,DOJI HN,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530064,2025-04-06,DOJI SG,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530064,2025-04-06,BTMC SJC,97200,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530065,2025-04-06,Phú Qúy SJC,97300,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530065,2025-04-06,PNJ TP.HCM,97500,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714530065,2025-04-06,PNJ Hà Nội,97500,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502828,2025-03-14,SJC,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502828,2025-03-14,DOJI HN,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502829,2025-03-14,DOJI SG,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502829,2025-03-14,BTMC SJC,94400,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502829,2025-03-14,Phú Qúy SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502829,2025-03-14,PNJ TP.HCM,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713502830,2025-03-14,PNJ Hà Nội,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437829,2025-02-25,SJC,89700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437831,2025-02-25,DOJI HN,89700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437831,2025-02-25,DOJI SG,89700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437831,2025-02-25,BTMC SJC,90100,92200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437831,2025-02-25,Phú Qúy SJC,90100,92100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437831,2025-02-25,PNJ TP.HCM,90700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713437831,2025-02-25,PNJ Hà Nội,90700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416389,2025-02-19,SJC,89600,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416390,2025-02-19,DOJI HN,89600,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416391,2025-02-19,DOJI SG,89600,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416391,2025-02-19,BTMC SJC,89600,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416391,2025-02-19,Phú Qúy SJC,89700,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416392,2025-02-19,PNJ TP.HCM,90100,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713416392,2025-02-19,PNJ Hà Nội,90100,91900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522238,2025-04-04,SJC,98800,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522239,2025-04-04,DOJI HN,98800,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522240,2025-04-04,DOJI SG,98800,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522240,2025-04-04,BTMC SJC,98800,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522240,2025-04-04,Phú Qúy SJC,98600,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522240,2025-04-04,PNJ TP.HCM,98700,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714522241,2025-04-04,PNJ Hà Nội,98700,101300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565144,2025-04-15,SJC,105500,108000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565144,2025-04-15,DOJI HN,105500,108000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565146,2025-04-15,DOJI SG,105500,108000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565146,2025-04-15,BTMC SJC,105500,108000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565146,2025-04-15,Phú Qúy SJC,104800,108000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565146,2025-04-15,PNJ TP.HCM,102800,106000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714565147,2025-04-15,PNJ Hà Nội,102800,106000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391308,2025-02-14,SJC,88300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391323,2025-02-14,DOJI HN,88300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391323,2025-02-14,DOJI SG,88300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391324,2025-02-14,BTMC SJC,88300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391324,2025-02-14,Phú Qúy SJC,88300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391324,2025-02-14,PNJ TP.HCM,89200,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713391325,2025-02-14,PNJ Hà Nội,89200,91200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504934,2025-03-30,SJC,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504935,2025-03-30,DOJI HN,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504935,2025-03-30,DOJI SG,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504935,2025-03-30,BTMC SJC,98500,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504936,2025-03-30,Phú Qúy SJC,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504937,2025-03-30,PNJ TP.HCM,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714504938,2025-03-30,PNJ Hà Nội,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526650,2025-04-05,SJC,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526651,2025-04-05,DOJI HN,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526651,2025-04-05,DOJI SG,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526651,2025-04-05,BTMC SJC,97200,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526652,2025-04-05,Phú Qúy SJC,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526653,2025-04-05,PNJ TP.HCM,97500,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714526653,2025-04-05,PNJ Hà Nội,97500,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481718,2025-03-08,SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481723,2025-03-08,DOJI HN,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481725,2025-03-08,DOJI SG,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481725,2025-03-08,BTMC SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481725,2025-03-08,Phú Qúy SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481725,2025-03-08,PNJ TP.HCM,91700,93200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713481726,2025-03-08,PNJ Hà Nội,91700,93200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441560,2025-02-26,SJC,89000,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441561,2025-02-26,DOJI HN,89000,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441561,2025-02-26,DOJI SG,89000,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441561,2025-02-26,BTMC SJC,89300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441561,2025-02-26,Phú Qúy SJC,89300,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441562,2025-02-26,PNJ TP.HCM,90200,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713441562,2025-02-26,PNJ Hà Nội,90200,91300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449482,2025-02-28,SJC,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449482,2025-02-28,DOJI HN,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449482,2025-02-28,DOJI SG,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449483,2025-02-28,BTMC SJC,88800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449483,2025-02-28,Phú Qúy SJC,88800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449483,2025-02-28,PNJ TP.HCM,89800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713449484,2025-02-28,PNJ Hà Nội,89800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469553,2025-03-21,SJC,94700,97700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469553,2025-03-21,DOJI HN,94700,97700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469554,2025-03-21,DOJI SG,94700,97700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469554,2025-03-21,BTMC SJC,95200,97700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469554,2025-03-21,Phú Qúy SJC,94900,97700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469554,2025-03-21,PNJ TP.HCM,96000,98500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714469554,2025-03-21,PNJ Hà Nội,96000,98500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473455,2025-03-22,SJC,94400,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473455,2025-03-22,DOJI HN,94400,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473455,2025-03-22,DOJI SG,94400,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473455,2025-03-22,BTMC SJC,94800,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473456,2025-03-22,Phú Qúy SJC,94600,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473456,2025-03-22,PNJ TP.HCM,95700,98300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714473456,2025-03-22,PNJ Hà Nội,95700,98300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461463,2025-03-03,SJC,89000,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461464,2025-03-03,DOJI HN,89000,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461464,2025-03-03,DOJI SG,89000,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461464,2025-03-03,BTMC SJC,89300,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461465,2025-03-03,Phú Qúy SJC,89300,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461465,2025-03-03,PNJ TP.HCM,90000,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713461465,2025-03-03,PNJ Hà Nội,90000,91000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431607,2025-02-23,SJC,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431607,2025-02-23,DOJI HN,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431607,2025-02-23,DOJI SG,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431608,2025-02-23,BTMC SJC,89600,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431608,2025-02-23,Phú Qúy SJC,89600,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431608,2025-02-23,PNJ TP.HCM,90100,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713431609,2025-02-23,PNJ Hà Nội,90100,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490030,2025-03-26,SJC,96700,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490031,2025-03-26,DOJI HN,96700,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490031,2025-03-26,DOJI SG,96700,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490031,2025-03-26,BTMC SJC,96800,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490031,2025-03-26,Phú Qúy SJC,96700,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490032,2025-03-26,PNJ TP.HCM,96700,99000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714490032,2025-03-26,PNJ Hà Nội,96700,99000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485481,2025-03-09,SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485482,2025-03-09,DOJI HN,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485482,2025-03-09,DOJI SG,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485482,2025-03-09,BTMC SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485482,2025-03-09,Phú Qúy SJC,90900,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485482,2025-03-09,PNJ TP.HCM,91700,93200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713485483,2025-03-09,PNJ Hà Nội,91700,93200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+crawl_timestamp,price_date,gold_type,buy_price,sell_price,source
+1744714493313,2025-03-27,SJC,97400,98900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714493313,2025-03-27,DOJI HN,97400,98900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714493314,2025-03-27,DOJI SG,97400,98900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714493314,2025-03-27,BTMC SJC,97500,98900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714493314,2025-03-27,Phú Qúy SJC,97400,98900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714493314,2025-03-27,PNJ TP.HCM,97400,99400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714493315,2025-03-27,PNJ Hà Nội,97400,99400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514959,2025-04-02,SJC,99100,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514960,2025-04-02,DOJI HN,99100,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514960,2025-04-02,DOJI SG,99100,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514960,2025-04-02,BTMC SJC,99100,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514961,2025-04-02,Phú Qúy SJC,98700,101700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514961,2025-04-02,PNJ TP.HCM,99100,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714514961,2025-04-02,PNJ Hà Nội,99100,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545276,2025-04-10,SJC,100600,103600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545276,2025-04-10,DOJI HN,100600,103600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545276,2025-04-10,DOJI SG,100600,103600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545277,2025-04-10,BTMC SJC,100600,103600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545277,2025-04-10,Phú Qúy SJC,100000,103600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545277,2025-04-10,PNJ TP.HCM,99900,102900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714545277,2025-04-10,PNJ Hà Nội,99900,102900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405554,2025-02-17,SJC,87600,90600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405554,2025-02-17,DOJI HN,87600,90600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405554,2025-02-17,DOJI SG,87600,90600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405555,2025-02-17,BTMC SJC,87600,90600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405555,2025-02-17,Phú Qúy SJC,88200,90600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405555,2025-02-17,PNJ TP.HCM,89100,90550,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713405555,2025-02-17,PNJ Hà Nội,89100,90550,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499514,2025-03-13,SJC,92900,94400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499514,2025-03-13,DOJI HN,92900,94400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499514,2025-03-13,DOJI SG,92900,94400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499515,2025-03-13,BTMC SJC,93000,94400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499515,2025-03-13,Phú Qúy SJC,93000,94400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499515,2025-03-13,PNJ TP.HCM,93300,94800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713499515,2025-03-13,PNJ Hà Nội,93300,94800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481685,2025-03-24,SJC,95100,97600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481685,2025-03-24,DOJI HN,95100,97600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481685,2025-03-24,DOJI SG,95100,97600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481685,2025-03-24,BTMC SJC,95300,97600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481685,2025-03-24,Phú Qúy SJC,95100,97600,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481685,2025-03-24,PNJ TP.HCM,95900,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714481687,2025-03-24,PNJ Hà Nội,95900,98400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465096,2025-03-04,SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465096,2025-03-04,DOJI HN,90100,92100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465096,2025-03-04,DOJI SG,90100,92100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465096,2025-03-04,BTMC SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465097,2025-03-04,Phú Qúy SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465097,2025-03-04,PNJ TP.HCM,91500,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713465097,2025-03-04,PNJ Hà Nội,91500,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559655,2025-04-14,SJC,105000,107500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559655,2025-04-14,DOJI HN,105000,107500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559655,2025-04-14,DOJI SG,105000,107500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559655,2025-04-14,BTMC SJC,105000,107500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559656,2025-04-14,Phú Qúy SJC,104000,107500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559656,2025-04-14,PNJ TP.HCM,102000,105100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714559656,2025-04-14,PNJ Hà Nội,102000,105100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492980,2025-03-11,SJC,91000,93000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492980,2025-03-11,DOJI HN,91000,93000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492981,2025-03-11,DOJI SG,91000,93000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492981,2025-03-11,BTMC SJC,91000,92800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492981,2025-03-11,Phú Qúy SJC,91000,92800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492981,2025-03-11,PNJ TP.HCM,92000,93400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713492981,2025-03-11,PNJ Hà Nội,92000,93400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496195,2025-03-12,SJC,91800,93500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496195,2025-03-12,DOJI HN,91800,93500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496197,2025-03-12,DOJI SG,91800,93500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496197,2025-03-12,BTMC SJC,92000,93500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496197,2025-03-12,Phú Qúy SJC,92000,93500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496197,2025-03-12,PNJ TP.HCM,92300,93900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713496197,2025-03-12,PNJ Hà Nội,92300,93900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548997,2025-04-11,SJC,102200,105200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548997,2025-04-11,DOJI HN,102200,105200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548998,2025-04-11,DOJI SG,102200,105200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548998,2025-04-11,BTMC SJC,102200,105200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548998,2025-04-11,Phú Qúy SJC,102000,105200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548998,2025-04-11,PNJ TP.HCM,100800,104300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714548998,2025-04-11,PNJ Hà Nội,100800,104300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456686,2025-03-18,SJC,96700,98200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456686,2025-03-18,DOJI HN,96700,98200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456687,2025-03-18,DOJI SG,96700,98200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456687,2025-03-18,BTMC SJC,96700,98200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456687,2025-03-18,Phú Qúy SJC,96700,98200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456687,2025-03-18,PNJ TP.HCM,96900,98500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714456688,2025-03-18,PNJ Hà Nội,96900,98500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540897,2025-04-09,SJC,99700,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540897,2025-04-09,DOJI HN,99700,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540897,2025-04-09,DOJI SG,99700,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540897,2025-04-09,BTMC SJC,99800,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540897,2025-04-09,Phú Qúy SJC,98900,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540897,2025-04-09,PNJ TP.HCM,99500,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714540898,2025-04-09,PNJ Hà Nội,99500,101900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500549,2025-03-29,SJC,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500549,2025-03-29,DOJI HN,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500550,2025-03-29,DOJI SG,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500550,2025-03-29,BTMC SJC,98500,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500551,2025-03-29,Phú Qúy SJC,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500551,2025-03-29,PNJ TP.HCM,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714500551,2025-03-29,PNJ Hà Nội,98400,100700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456936,2025-03-02,SJC,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456937,2025-03-02,DOJI HN,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456937,2025-03-02,DOJI SG,88500,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456937,2025-03-02,BTMC SJC,88800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456937,2025-03-02,Phú Qúy SJC,88700,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456937,2025-03-02,PNJ TP.HCM,89800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713456937,2025-03-02,PNJ Hà Nội,89800,90500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508196,2025-03-31,SJC,99500,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508197,2025-03-31,DOJI HN,99500,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508197,2025-03-31,DOJI SG,99500,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508197,2025-03-31,BTMC SJC,99500,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508197,2025-03-31,Phú Qúy SJC,99200,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508197,2025-03-31,PNJ TP.HCM,99500,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714508198,2025-03-31,PNJ Hà Nội,99500,101800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428020,2025-02-22,SJC,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428020,2025-02-22,DOJI HN,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428020,2025-02-22,DOJI SG,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428020,2025-02-22,BTMC SJC,89600,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428020,2025-02-22,Phú Qúy SJC,89600,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428021,2025-02-22,PNJ TP.HCM,90100,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713428021,2025-02-22,PNJ Hà Nội,90100,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534002,2025-04-07,SJC,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534002,2025-04-07,DOJI HN,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534002,2025-04-07,DOJI SG,97100,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534003,2025-04-07,BTMC SJC,97300,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534003,2025-04-07,Phú Qúy SJC,97300,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534003,2025-04-07,PNJ TP.HCM,97500,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714534003,2025-04-07,PNJ Hà Nội,97500,100100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424646,2025-02-21,SJC,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424646,2025-02-21,DOJI HN,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424646,2025-02-21,DOJI SG,89400,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424647,2025-02-21,BTMC SJC,89500,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424647,2025-02-21,Phú Qúy SJC,89500,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424647,2025-02-21,PNJ TP.HCM,90100,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713424647,2025-02-21,PNJ Hà Nội,90100,91700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460572,2025-03-19,SJC,98000,99500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460575,2025-03-19,DOJI HN,98000,99500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460575,2025-03-19,DOJI SG,98000,99500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460575,2025-03-19,BTMC SJC,98000,99500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460575,2025-03-19,Phú Qúy SJC,98000,99500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460575,2025-03-19,PNJ TP.HCM,98100,99900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714460575,2025-03-19,PNJ Hà Nội,98100,99900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453452,2025-03-17,SJC,94800,96100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453453,2025-03-17,DOJI HN,94800,96100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453453,2025-03-17,DOJI SG,94800,96100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453453,2025-03-17,BTMC SJC,94800,96100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453453,2025-03-17,Phú Qúy SJC,94800,96100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453453,2025-03-17,PNJ TP.HCM,94900,96500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714453453,2025-03-17,PNJ Hà Nội,94900,96500,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,SJC,94400,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,DOJI HN,94400,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,DOJI SG,94400,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,BTMC SJC,94800,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,Phú Qúy SJC,94600,97400,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,PNJ TP.HCM,95700,98300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714478323,2025-03-23,PNJ Hà Nội,95700,98300,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506709,2025-03-15,SJC,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506709,2025-03-15,DOJI HN,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506709,2025-03-15,DOJI SG,94300,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506710,2025-03-15,BTMC SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506710,2025-03-15,Phú Qúy SJC,94500,95800,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506710,2025-03-15,PNJ TP.HCM,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713506710,2025-03-15,PNJ Hà Nội,94500,96200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472798,2025-03-06,SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472798,2025-03-06,DOJI HN,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472798,2025-03-06,DOJI SG,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472798,2025-03-06,BTMC SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472798,2025-03-06,Phú Qúy SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472799,2025-03-06,PNJ TP.HCM,91500,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713472799,2025-03-06,PNJ Hà Nội,91500,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,SJC,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,DOJI HN,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,DOJI SG,90700,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,BTMC SJC,90900,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,Phú Qúy SJC,90900,92700,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,PNJ TP.HCM,91700,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713468900,2025-03-05,PNJ Hà Nội,91700,92900,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517964,2025-04-03,SJC,99500,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517964,2025-04-03,DOJI HN,99500,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517964,2025-04-03,DOJI SG,99500,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517964,2025-04-03,BTMC SJC,99000,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517964,2025-04-03,Phú Qúy SJC,99000,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517965,2025-04-03,PNJ TP.HCM,99500,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714517965,2025-04-03,PNJ Hà Nội,99500,102200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536831,2025-04-08,SJC,97700,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536831,2025-04-08,DOJI HN,97700,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536831,2025-04-08,DOJI SG,97700,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536832,2025-04-08,BTMC SJC,97800,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536832,2025-04-08,Phú Qúy SJC,97700,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536832,2025-04-08,PNJ TP.HCM,97700,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714536832,2025-04-08,PNJ Hà Nội,97700,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496329,2025-03-28,SJC,98200,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496330,2025-03-28,DOJI HN,98200,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496330,2025-03-28,DOJI SG,98200,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496330,2025-03-28,BTMC SJC,98300,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496330,2025-03-28,Phú Qúy SJC,98300,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496330,2025-03-28,PNJ TP.HCM,98200,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714496330,2025-03-28,PNJ Hà Nội,98200,100200,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,SJC,89700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,DOJI HN,89700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,DOJI SG,89700,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,BTMC SJC,90000,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,Phú Qúy SJC,90000,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,PNJ TP.HCM,90500,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744713435023,2025-02-24,PNJ Hà Nội,90500,92000,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512069,2025-04-01,SJC,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512070,2025-04-01,DOJI HN,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512070,2025-04-01,DOJI SG,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512070,2025-04-01,BTMC SJC,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512070,2025-04-01,Phú Qúy SJC,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512070,2025-04-01,PNJ TP.HCM,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html
+1744714512070,2025-04-01,PNJ Hà Nội,99400,102100,https://www.24h.com.vn/gia-vang-hom-nay-c425.html

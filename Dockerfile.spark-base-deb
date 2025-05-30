@@ -1,0 +1,12 @@
+# Dockerfile.spark-base-deb
+FROM bitnami/spark:3.2.1
+
+USER root
+
+# Cài pip và numpy
+RUN apt-get update && \
+    apt-get install -y python3-pip && \
+    pip3 install numpy
+
+# Quay lại user không-privilege
+USER 1001

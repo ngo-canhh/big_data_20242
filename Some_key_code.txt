@@ -1,0 +1,100 @@
+Mỗi lần down xong chạy lệnh : 
+docker volume rm project_zk-data-h2dn project_zk-datalog-h2dn project_kafka-data-h2dn
+
+#xoa checkpoint kafka_to_hdfs
+docker exec namenode-h2dn hdfs dfs -rm -r /user/spark/checkpoints/kafka_to_hdfs_checkpoint
+docker exec namenode-h2dn hdfs dfs -rm -r /user/spark/checkpoints/kafka_to_hdfs_phone_checkpoint
+
+
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1 /opt/spark-apps/jobs/kafka_to_hdfs_raw.py
+
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1 /opt/spark-apps/jobs/kafka_to_hdfs_raw_soccer.py
+
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.elasticsearch:elasticsearch-spark-30_2.12:8.9.0 /opt/spark-apps/jobs/kafka_to_es_stream.py
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1 /opt/spark-apps/jobs/read_all_data_in_hdfs.py
+
+
+
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-processh2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.elasticsearch:elasticsearch-spark-30_2.12:8.9.0 /opt/spark-apps/jobs/kafka_to_es_stream_phone.py
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.elasticsearch:elasticsearch-spark-30_2.12:8.9.0 /opt/spark-apps/jobs/kafka_to_es_stream_soccer.py
+
+#tim noi chua noi dung
+docker exec namenode-h2dn hdfs dfs -ls /user/data/gold_raw_parquet/year=2025/month=3/day=2 
+
+#tra cuu noi dung
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 /opt/spark-apps/jobs/view_parquet.py hdfs://namenode-h2dn:9000/user/data/gold_raw_parquet/year=2025/month=3/day=15/part...
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 /opt/spark-apps/jobs/view_parquet_phone.py hdfs://namenode-h2dn:9000/user/data/phone_raw_parquet/phone_data.parquet
+
+
+# hdfs to elasticsearch
+docker exec spark-master-process-h2dn /spark/bin/spark-submit --master spark://spark-master-process-h2dn:7077 --packages org.elasticsearch:elasticsearch-spark-30_2.12:8.9.0 /opt/spark-apps/jobs/batch_processor.py
+
+
+
+
+# mapping price_date thanh kieu date: 
+DELETE gold_prices_prod
+PUT _index_template/gold_prices_template
+{
+  "index_patterns": ["gold_prices_prod*"],
+  "priority": 500,
+  "template": {
+    "settings": {
+      "number_of_shards": 1
+    },
+    "mappings": {
+      "properties": {
+        "@timestamp": { "type": "date" },             // ĐÚNG: date
+        "price_date_dt": { "type": "date" },          // ĐÚNG: date
+        "price_date": { "type": "keyword" },        // Giữ price_date gốc làm keyword nếu cần lọc chính xác chuỗi
+        "gold_type": { "type": "keyword" },
+        "source": { "type": "keyword" },
+        "view_type": { "type": "keyword" },
+        "buy_price": { "type": "long" },
+        "sell_price": { "type": "long" },
+        "crawl_timestamp": { "type": "long" },
+        "avg_buy_price": {"type": "double"},
+        "avg_sell_price": {"type": "double"},
+        "min_buy_price": {"type": "long"},
+        "max_buy_price": {"type": "long"},
+        "min_sell_price": {"type": "long"},
+        "max_sell_price": {"type": "long"},
+        "record_count": {"type": "long"},
+        "doc_id": {"type": "keyword"}
+      }
+    }
+  }
+}
+
+# hdfs to csv
+docker exec spark-master-h2dn /spark/bin/spark-submit --master spark://spark-master-h2dn:7077 /opt/spark-apps/jobs/extract_to_csv.py  
+Run: docker exec namenode-h2dn hdfs dfs -getmerge hdfs://namenode-h2dn:9000/user/data/temp_gold_csv_parts /tmp/merged_output.csv
+docker cp namenode-h2dn:/tmp/merged_output.csv .\gold_data_extracted.csv  
+
+
+####kafka_to_es_stream
+docker exec -it spark-master-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-h2dn:7077 /opt/spark-apps/jobs/kafka_to_es_stream.py
+
+
+
+# Cap quyen ghi cho spark
+hdfs dfs -mkdir -p /user/spark
+hdfs dfs -chown spark:spark /user/spark
+
+***Tuy chon***
+hdfs dfs -mkdir -p /user/spark/models
+hdfs dfs -chown -R spark:spark /user/spark/models
+
+
+***Huan luyen
+docker exec -it spark-master-train-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-train-h2dn:7077 /opt/spark-apps/jobs/gold_price_prediction_with_date.py
+docker exec -it spark-master-train-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-train-h2dn:7077 /opt/spark-apps/jobs/train_model.py
+docker exec -it spark-master-train-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-train-h2dn:7077 /opt/spark-apps/jobs/market_value_train.py
+
+docker exec -it spark-master-train-h2dn /opt/bitnami/spark/bin/spark-submit --master spark://spark-master-train-h2dn:7077 /opt/spark-apps/jobs/predict_gold_price.py
+
+
+docker exec -it namenode-h2dn bash -c "hdfs dfs -mkdir -p /model_export && hdfs dfs -get /user/spark/models/gold_price_model_with_date /model_export"
+docker cp namenode-h2dn:/model_export .\exported_model
+
+

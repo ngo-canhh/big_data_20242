@@ -1,0 +1,305 @@
+version: '3.8'
+
+networks:
+  hadoop-2dn-net:
+    driver: bridge
+
+volumes:
+  zk-data-h2dn:
+    # external: true
+  zk-datalog-h2dn:
+    # external: true
+  kafka-data-h2dn:
+  nn-data-h2dn:
+  dn1-data-h2dn:
+  dn2-data-h2dn:
+  es-data-h2dn:
+
+services:
+  # --- Zookeeper ---
+  # Cần thiết cho Kafka
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.2
+    container_name: zookeeper-h2dn
+    networks:
+      - hadoop-2dn-net
+    ports:
+      - "2181:2181" # Port client Zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+      ZOOKEEPER_CLUSTER_ID: "hadoop-cluster-2dn" # ID của cluster Zookeeper
+    volumes:
+      - zk-data-h2dn:/var/lib/zookeeper/data # Thư mục lưu trữ dữ liệu Zookeeper
+      - zk-datalog-h2dn:/var/lib/zookeeper/log
+    stop_grace_period: 1m # Thời gian chờ khi dừng container Zookeeper
+    healthcheck:
+      test: ["CMD", "sh", "-c", "nc -z localhost 2181 || exit 1"] # Kiểm tra cổng client ZK
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s # Thời gian chờ trước khi bắt đầu kiểm tra
+
+  # --- Kafka ---
+  # Message broker để nhận dữ liệu từ crawler và cung cấp cho Spark Streaming
+  kafka:
+    image: confluentinc/cp-kafka:7.3.2
+    container_name: kafka-h2dn
+    networks:
+      - hadoop-2dn-net
+    ports:
+      - "9092:9092"   # Port cho client bên ngoài Docker (crawler)
+      - "29092:29092" # Port cho client bên trong Docker (Spark)
+    depends_on:
+      zookeeper:
+        condition: service_healthy # Chờ Zookeeper thực sự healthy
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181' # Địa chỉ Zookeeper bên trong Docker
+      # Khai báo các listeners mà Kafka sẽ lắng nghe:
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      #   - PLAINTEXT: Cho client bên ngoài (trên port 9092)
+      #   - PLAINTEXT_INTERNAL: Cho client bên trong Docker (trên port 29092)
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_INTERNAL://0.0.0.0:29092
+      # Khai báo địa chỉ mà Kafka sẽ quảng bá cho client kết nối tới:
+      #   - Client bên ngoài sẽ kết nối tới localhost:9092
+      #   - Client bên trong Docker sẽ kết nối tới kafka-h2dn:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka-h2dn:29092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1 # Bắt buộc là 1 vì chỉ có 1 broker
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_CONFLUENT_LICENSE_TOPIC_REPLICATION_FACTOR: 1 # Bắt buộc là 1
+      KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1 # Bắt buộc là 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1 # Bắt buộc là 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1 # Bắt buộc là 1
+      KAFKA_CLUSTER_ID: "hadoop-cluster-2dn" # ID của cluster Kafka
+    volumes:
+      - kafka-data-h2dn:/var/lib/kafka/data
+
+    stop_grace_period: 1m # Thời gian chờ khi dừng container Kafka
+      
+    
+
+  # --- HDFS Namenode ---
+  # Quản lý metadata của hệ thống file HDFS
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: namenode-h2dn
+    networks:
+      - hadoop-2dn-net
+    ports:
+      - "9870:9870" # Port Web UI của HDFS
+      - "9000:9000" # Port RPC cho client (Spark, Datanodes)
+    volumes:
+      - nn-data-h2dn:/hadoop/dfs/name
+    environment:
+      - CLUSTER_NAME=hadoop-cluster-2dn
+      - DFS_REPLICATION=2 # Số bản sao HDFS, khớp với số lượng datanode
+      # --- QUAN TRỌNG: Đặt port RPC của Namenode là 9000 ---
+      # Ghi đè cấu hình fs.defaultFS trong core-site.xml
+      - CORE_CONF_fs_defaultFS=hdfs://namenode-h2dn:9000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9870"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # --- HDFS Datanode 1 ---
+  # Lưu trữ dữ liệu thực tế của HDFS
+  datanode1:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode1-h2dn
+    networks:
+      - hadoop-2dn-net
+    volumes:
+      - dn1-data-h2dn:/hadoop/dfs/data
+    environment:
+      SERVICE_PRECONDITION: "namenode-h2dn:9870" # Chờ Namenode UI sẵn sàng
+      # Có thể thêm CORE_CONF_fs_defaultFS ở đây cho nhất quán, dù không bắt buộc
+      # - CORE_CONF_fs_defaultFS=hdfs://namenode-h2dn:9000
+      CORE_CONF_fs_defaultFS: "hdfs://namenode-h2dn:9000" # Đặt lại cho nhất quán
+
+    depends_on:
+      namenode:
+        condition: service_healthy # Chờ Namenode thực sự healthy
+
+  # --- HDFS Datanode 2 ---
+  # Lưu trữ dữ liệu thực tế của HDFS
+  datanode2:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: datanode2-h2dn
+    networks:
+      - hadoop-2dn-net
+    volumes:
+      - dn2-data-h2dn:/hadoop/dfs/data
+    environment:
+      SERVICE_PRECONDITION: "namenode-h2dn:9870"
+      CORE_CONF_fs_defaultFS: "hdfs://namenode-h2dn:9000" # Đặt lại cho nhất quán
+    depends_on:
+      namenode:
+        condition: service_healthy
+
+  # --- Spark Master ---
+  # Quản lý cluster Spark
+
+
+  spark-master-train:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark-base-deb
+    image: spark-custom-deb:3.2.1
+    container_name: spark-master-train-h2dn
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master-train-h2dn
+      - SPARK_MASTER_PORT=7077
+    ports:
+      - "8080:8080" # Web UI
+      - "7077:7077" # Spark Master port
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+      - ./exported_model:/opt/exported_model
+    networks:
+      - hadoop-2dn-net
+    depends_on:
+      - namenode
+      - datanode1
+      - datanode2
+
+  spark-worker-1-train:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark-base-deb
+    image: spark-worker-custom-deb:3.2.1
+    container_name: spark-worker-1-train-h2dn
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master-train-h2dn:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+    ports:
+      - "8081:8081" # Worker Web UI
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+      - ./exported_model:/opt/exported_model
+    networks:
+      - hadoop-2dn-net
+    depends_on:
+      - spark-master-train
+
+  spark-worker-2-train:
+    build:
+      context: .
+      dockerfile: Dockerfile.spark-base-deb
+    image: spark-worker-custom-deb:3.2.1
+    container_name: spark-worker-2-train-h2dn
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master-train-h2dn:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+    ports:
+      - "8082:8081" # Worker Web UI
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+      - ./exported_model:/opt/exported_model
+    networks:
+      - hadoop-2dn-net
+    depends_on:
+      - spark-master-train
+
+  # --- Spark Cluster 2: Processing (image có sẵn) ---
+  spark-master-process:
+    image: bde2020/spark-master:3.2.1-hadoop3.2
+    container_name: spark-master-process-h2dn
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master-process-h2dn
+      - SPARK_MASTER_PORT=7077
+      - SPARK_PUBLIC_DNS=localhost
+    ports:
+      - "8083:8080" # Web UI, tránh xung đột với 8080
+      - "7078:7077" # Spark Master port, tránh xung đột với 7077
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+    networks:
+      - hadoop-2dn-net
+    depends_on:
+      - namenode
+      - datanode1
+      - datanode2
+
+  spark-worker-1-process:
+    image: bde2020/spark-worker:3.2.1-hadoop3.2
+    container_name: spark-worker-1-process-h2dn
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER=spark://spark-master-process-h2dn:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+      - SPARK_PUBLIC_DNS=localhost
+    ports:
+      - "8084:8081" # Worker Web UI, tránh xung đột
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+    networks:
+      - hadoop-2dn-net
+    depends_on:
+      - spark-master-process
+
+  spark-worker-2-process:
+    image: bde2020/spark-worker:3.2.1-hadoop3.2
+    container_name: spark-worker-2-process-h2dn
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER=spark://spark-master-process-h2dn:7077
+      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_CORES=1
+      - SPARK_PUBLIC_DNS=localhost
+    ports:
+      - "8085:8081" # Worker Web UI, tránh xung đột
+    volumes:
+      - ./spark-apps:/opt/spark-apps
+    networks:
+      - hadoop-2dn-net
+    depends_on:
+      - spark-master-process
+
+
+  # --- Elasticsearch ---
+  # Lưu trữ và cung cấp dữ liệu cho truy vấn (Serving Layer)
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.9.0
+    container_name: elasticsearch-h2dn
+    networks:
+      - hadoop-2dn-net
+    ports:
+      - "9200:9200" # Port HTTP API
+      - "9300:9300" # Port giao tiếp nội bộ (ít dùng với single-node)
+    environment:
+      - discovery.type=single-node # Chạy dưới dạng một node đơn lẻ
+      - xpack.security.enabled=false # Tắt bảo mật để đơn giản hóa
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g # Giới hạn RAM cho Elasticsearch
+      - bootstrap.memory_lock=true # Khóa bộ nhớ để tăng hiệu năng
+    ulimits: # Cài đặt giới hạn hệ thống cho Elasticsearch
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - es-data-h2dn:/usr/share/elasticsearch/data
+
+  # --- Kibana ---
+  # Công cụ trực quan hóa dữ liệu từ Elasticsearch
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.9.0
+    container_name: kibana-h2dn
+    networks:
+      - hadoop-2dn-net
+    ports:
+      - "5601:5601" # Port Web UI của Kibana
+    depends_on:
+      - elasticsearch # Chờ Elasticsearch khởi động
+    environment:
+      ELASTICSEARCH_HOSTS: '["http://elasticsearch-h2dn:9200"]' # Địa chỉ Elasticsearch bên trong Docker
